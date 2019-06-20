@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var container = function container() {
+        obj = {};
+        var setup = function setup() {
+          obj.parent = document.getElementById('foo');
+          obj.canvas = document.createElement('canvas');
+          obj.parent.appendChild(obj.canvas);
+        }
+        setup();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="foo"></div>
+
+    <script>
+      // var parent = document.getElementById('foo');
+      // var canvas = document.createElement('canvas');
+      // parent.appendChild(canvas);
+      
+      container();
+    </script>
+  </body>
+</html>
