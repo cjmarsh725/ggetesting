@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
+    <!-- <script>
       const engine = () => {
         const internal = {};
         const external = {};
@@ -13,14 +13,15 @@
         }
         return external;
       }
-    </script>
+    </script> -->
+    <script src="dist/gge.js" ></script>
   </head>
   <body>
     <div id="foo"></div>
 
     <script>
-      const game = engine();
-      game.load(7);
+      console.log("Testing...");
+      GG.setup();
     </script>
   </body>
 </html>
