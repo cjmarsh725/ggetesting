@@ -1,11 +1,14 @@
 var GG = (function (exports) {
   'use strict';
 
+  const renderer = {};
+
   const config = () => {
-    return "foobar";
+    return renderer.foo;
   };
 
   const setup = () => {
+    renderer.foo = "foo";
     console.log(config());
   };
 

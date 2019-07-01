@@ -1,5 +1,7 @@
+import { renderer } from "./renderer";
+
 const config = () => {
-  return "foobar";
+  return renderer.foo;
 }
 
 export default config;
