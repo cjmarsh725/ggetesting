@@ -1,5 +1,5 @@
-import { renderer } from "./renderer";
+import { Renderer } from "./renderer";
 
 export const config = () => {
-  return renderer.foo;
+  return "foo";
 }

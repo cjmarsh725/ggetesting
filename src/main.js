@@ -1,12 +1,6 @@
 import { config } from "./config";
-import { renderer } from "./renderer";
+import Renderer from "./renderer";
 
-const _width = new WeakMap();
+import { Sprite } from './sprite';
 
-export class Sprite {
-  constructor() {
-    _width.set(this, 5);
-  }
-  set width(val) {_width.set(this, val)}
-  get width() {return _width.get(this)}
-}
+export { Sprite as sprite };
