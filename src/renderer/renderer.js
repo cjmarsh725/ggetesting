@@ -1,4 +1,4 @@
-import { shaders } from './shaders';
+import { shaders } from '../shaders';
 
 class Renderer {
   constructor() {
@@ -14,6 +14,10 @@ class Renderer {
     console.error("There was a problem creating the shader: " +
                       gl.getShaderInfoLog(shader));
     gl.deleteShader(shader);
+  }
+
+  run() {
+    console.log("running...");
   }
 
 }

@@ -1,6 +1,7 @@
 import { config } from "./config";
-import Renderer from "./renderer";
+import { renderer } from "./renderer";
 
 import { Sprite } from './sprite';
 
 export { Sprite as sprite };
+export const run = renderer.run;

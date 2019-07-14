@@ -1,4 +1,4 @@
-import { Renderer } from "./renderer";
+import { Renderer } from "./renderer/renderer";
 
 export const config = () => {
   return "foo";
